@@ -1,0 +1,3 @@
+npm install --save axios react-chartjs-2 react-countup classnames
+https://covid19.mathdro.id/api
+https://i.ibb.co/7QpKsCX/image.png

@@ -5,7 +5,7 @@ import {Card,Typography,CardContent,Grid,makeStyles} from '@material-ui/core';
 import CountUp from 'react-countup';
 import cx from 'classnames';
 //import classes from './Cards.css';
-
+import image from '../../image/image.png';
 const useStyles = makeStyles((theme) => ({
   container:{
     margin: '50px 0'
@@ -37,6 +37,7 @@ const Cards =({data: {confirmed,recovered,deaths,lastUpdate}}) =>{
     }
     return(
       <div className={classes.container}>
+          <img src={image} alt="COVID-19"/>
           <Grid container spacing={3} justify="center">
             <Grid item component={Card} xs={12} md={3} className={cx(classes.card,classes.infected)}>
                 <CardContent>
