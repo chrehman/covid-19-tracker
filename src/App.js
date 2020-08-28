@@ -7,7 +7,7 @@ import React from 'react';
 import {Cards,Chart,CountryPicker} from './componenets';
 import {globalData} from './api';
 
-//import image from './image/image.png';
+import image from './image/image.png';
 import styles from './App.module.css';
 
 
@@ -32,7 +32,7 @@ class App extends React.Component{
         const {data,country}=this.state;
         return(
             <div className={styles.container}>
-                {/* <img src={image} alt="Covid-19"/> */}
+                <img src={image} alt="Covid-19"/>
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Chart data={data} country={country}/>
