@@ -40,4 +40,4 @@ jobs:
       
     
       - name: Deploy surge
-        run: surge ./build first_react_app_abdulrahaman.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build abdulrahaman_covid19_app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
